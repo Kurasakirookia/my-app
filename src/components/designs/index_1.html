@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+
+        .home_page_container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @font-face {
+            font-family:hmsansregular;
+            src: url(./HM\ Sans\ Regular.ttf);
+        }
+        @font-face {
+            font-family: hanson-bold;
+            src: url(./Hanson-Bold.ttf);
+        }
+        p{
+            font-family: hmsansregular;
+
+        }
+        .text{
+            font-family: hmsansregular;
+        }
+        nav {
+            width: 100%;
+            height: max-content;
+            display: flex;
+            flex-direction: row;
+            align-items: center ;
+            justify-content: center;
+            
+            
+            position: relative;
+            flex-wrap: wrap;
+            flex-grow: 0;
+            flex-shrink: 0;
+            
+        }
+    
+        .nav_row_1 {
+            width:100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap; /* Prevent wrapping */
+            justify-content: space-around; /* Ensure items are evenly spaced */
+            align-items: center; /* Align items vertically */
+            gap: 0; /* Remove gaps */
+           /* padding: 0px 2.5% 0px 2.5%; */
+          /* background-color: red;*/
+            margin-bottom: 2%;
+        }
+    
+        ul {
+            
+            display: flex;
+            width:auto;
+            flex-direction: row; /* Horizontal layout */
+            list-style-type: none; /* Remove default bullet points */
+            padding: 0;
+            margin: 0;
+            gap: 1rem; /* Add spacing between list items */
+            overflow: hidden; /* Hide overflow */
+            box-sizing: border-box;
+            align-items: center; /* Center items vertically */
+           
+            
+        }
+
+        .nav_row_1_right{
+            align-items: end;
+            padding-right: 5%;
+
+        }
+        .nav_row_1_left{
+            align-items: start;
+            
+
+        }
+    
+        li {
+            white-space: nowrap; /* Prevent text from wrapping */
+            overflow: hidden; /* Hide overflowing text */
+            text-overflow: ellipsis; /* Add ellipsis for long text */
+            height: 30px; /* Consistent height for list items */
+            display: flex;
+            align-items: center; /* Center content inside list items */
+            font-family: hmsansregular;
+        }
+    
+        .nav_row_1 .logo {
+            width: 30%;
+            display: flex;
+            align-items: center; /* Center the logo vertically */
+            justify-content: center;
+        }
+    
+        .logo > img {
+            height: auto;
+            width: 100px; /* Adjust width as needed */
+            object-fit: contain; /* Ensure the image fits without distortion */
+        }
+    
+       /* .nav_row_1_options.nav_row_1_left {
+            flex-grow: 1; /* Allow these ULs to take equal space 
+        }*/
+
+        /* nav_row_1 */
+
+        .nav_row_2{
+            padding-left: 8%;
+            display:flex;
+            width:50%;
+            gap:2%;
+            justify-content: center;
+            align-items: center;
+          
+           
+          
+
+            
+        }
+       
+        .nav_2_search{
+            display: flex   ;
+            
+
+        }
+
+
+        /*p1_m1_container */
+
+        .page_1_container{
+            width:800px;
+            height: auto;
+            margin-top: 2%;
+            display: flex;
+            flex-direction: column;
+            
+            gap: 1.2em;
+        }
+        .page_1_img_container1{
+            background-color: #E9EFED;
+            height: 650px;
+            width:auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        .page_1_img_container1 >img{
+            height:inherit;
+            width: auto;
+            object-fit: contain;
+        }
+
+       .page_1_text{
+        display: flex;
+        gap:2em;
+        justify-content: space-around;
+        
+        font-size:0.75rem;
+       }
+
+       .p1_m1_text{
+        position: absolute;
+        z-index: 10;
+        width:50%;
+        display: flex;
+        
+        flex-direction: column;
+        align-items: center;
+        top:65%;
+       }
+
+       .p1_m1_text > p{
+        font-family:Montserrat;
+    
+        font-weight: 650;
+        font-size: 2.7em;
+        text-wrap: nowrap;
+
+       }
+        
+       .p1_m1_text > button{
+            font-size: 102%;
+            flex-grow: 0;
+            flex-shrink: 0;
+            background-color: #000;
+            color:#fff;
+            padding: 0.75em;
+            border-style: none;
+        
+            white-space: nowrap;
+        
+            
+            cursor: pointer;
+       }
+       .shopnow:hover{
+        background-color: #483b3b;
+       
+       }
+
+
+       /*carousel*/
+       .page1_carousel1{
+        width:100%;
+        height:80%;
+        
+       }
+
+
+       
+       
+
+       
+
+      
+    
+     
+
+       
+
+
+    </style>
+</head> 
+<body>
+    <div class="home_page_container">
+
+    
+        <nav>
+                <div class="nav_row_1">
+                    <ul class="nav_row_1_options nav_row_1_left">~
+                        <li>Sustainability</li>
+                        <li>Custome</li>
+                        <li>newsletter</li>
+                        <li>"icon"</li>
+                    </ul>
+
+
+                    <div class="logo">
+                        <img src="./images/image-removebg-preview (3).png" alt="logo">
+                    </div>
+
+
+                    <ul class="nav_row_1_options nav_row_1_right">
+                        <li>
+                            <img src="" alt="">
+                            <p>signin</p>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <p>favrouties
+                            </p>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <p>Shopping bag</p>
+                        </li>
+                        
+                    </ul>
+
+                </div>
+
+            
+                <!-- <div class="nav_row_2_options"> -->
+                    <ul class="nav_row_2">
+                        <li>Ladies</li>
+                        <li>men</li>
+                        <li>baby</li>
+                        <li>kids</li>
+                        <li>Home</li>    
+                    </ul>
+
+                <!-- </div> -->
+                
+                <div class="nav_2_search">
+                    <img src="./icons/search.svg" alt="icon"> 
+                    <p style="padding-left:2px;">Search</p>
+                        
+                </div>
+
+            </nav>
+
+
+                <!-- actual page 1 -->
+                <div class="page_1_container">
+                    <div class="page_1_text">
+                        <p class="text">Free shipping above ₹1999</p>
+                        <p class="text">Free & flexible 15 days return</p>
+                        <p class="text">Estimated delivery time: 2-9 days</p>
+                    </div>
+                    <div class="page_1_img_container1">
+                        <img src="./images/wali_h&m_bgremoved.png" alt="p1_m1">
+
+                        <div class="p1_m1_text">
+                            <p class="boldtext">  Formal Whites occasion </p>
+                            
+                            <button class="shopnow text">shope now</button>
+                        </div>
+                    </div>
+
+
+                    <div class="page_1_img_container1" style="background-color:#dbdbdb;">
+                        <img src="./images/p1_m1.png" alt="p1_m1">
+
+                        <div class="p1_m1_text">
+                            <p class="boldtext">  White remix </p>
+                            
+                            <button class="shopnow text">shope now</button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="page_1_img_container1">
+                        <img src="./images/p1_m2.png" alt="p1_m1">
+
+                        <div class="p1_m1_text">
+                            <p class="boldtext">  Formal Whites </p>
+                            
+                            <button class="shopnow text">shope now</button>
+                        </div>
+                    </div>
+
+
+                    <div class="page_1_img_container1">
+                        <img src="./images/p1_m3.png" alt="p1_m1">
+
+                        <div class="p1_m1_text">
+                            <p class="boldtext">  Formal Whites </p>
+                            
+                            <button class="shopnow text">shope now</button>
+                        </div>
+                    </div>
+       
+ <!-- carousel-------------------------------------------- -->
+
+        <div class="page1_carousel1">
+            <!-- Radio buttons for navigation
+            <input type="radio" name="slides" id="slide1" checked>
+            <input type="radio" name="slides" id="slide2">
+            <input type="radio" name="slides" id="slide3"> -->
+
+            
+    
+            <!-- Carousel images -->
+            <div class="carousel1_slides">
+                <div class="slide" style="background-color: lightblue;">Slide 1</div>
+                <div class="slide" style="background-color: lightcoral;">Slide 2</div>
+                <div class="slide" style="background-color: lightgreen;">Slide 3</div>
+            </div>
+
+
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+    
+            <!-- Navigation controls -->
+            <div class="navigation">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+            </div>
+            
+        </div>
+
+         
+
+    </div> 
+    <!-- home_page_container -->
+
+        
+  
+
+   
+</body>
+</html>
+
+
+<!-- .p1_m1_text >button{
+    flex-shrink: 0;
+    flex-grow: 0;
+   }
+
+   .p1_m1_text{
+    position: absolute;
+    top: 80%; /* Vertically center the text-container */
+    left: 50%; /* Horizontally center the text-container */
+    transform: translate(-50%, -50%); /* Offset for perfect centering */
+    display: flex;
+    flex-direction: column; /* Stack the text and button vertically */
+    align-items: center; /* Center items horizontally within the flex container */
+    gap: 1rem; /* Space between the text and button */
+    text-align: center; /* Center-align the text */
+   }
+
+   .p1_m1_text >p{
+    top:65%;
+    
+    font-size: 2.7em;
+    text-wrap: nowrap;
+    position: absolute;
+    font-family:Montserrat;
+    
+    font-weight: 550;
+    
+   }
+
+   .p1_m1_text > button{
+   
+    background-color: #000;
+    color:#fff;
+    padding: 0.75em;
+    border-style: none;
+
+    white-space: nowrap;
+
+    border-radius: 0.5em;
+    cursor: pointer;
+   }
+
+   .shopnow:hover{
+    background-color: #483b3b;
+   
+   }
+
+ -->

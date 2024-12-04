@@ -69,9 +69,10 @@ function App() {
       <Alert alert={alert}></Alert>
       
           <Routes>
-          <Route path="/about" element={<About/>}/>
           
           <Route path="/"  element={<TextForm heading="Enter the text to analyz" showAlert={showAlert} mode={mode} toggleMode={toggleMode} btncolor={btncolor}></TextForm>  }/>
+          <Route path="/about" element={<About/>}/>
+          
         </Routes>
 
 
